@@ -61,7 +61,7 @@ export default {
 		}
 	},
 	created () {
-		this.apiUrl = (localStorage && localStorage.getItem('apiUrl')) || 'http://localhost:3000/api/';
+		this.apiUrl = (localStorage && localStorage.getItem('apiUrl')) || getData.url || 'http://localhost:3000/api/';
 		getData.url = this.apiUrl;
 	}
 }
