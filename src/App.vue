@@ -130,6 +130,9 @@ export default {
 				this.isLogin = true;
 			}
 			this.fullscreenLoading = false;
+		}, err=>{
+			this.openLogin();
+			this.fullscreenLoading = false;
 		});
 	}
 }
